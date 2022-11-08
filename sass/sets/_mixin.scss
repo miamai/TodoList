@@ -1,0 +1,28 @@
+@mixin button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 12px;
+
+  &:hover,
+  &:active {
+    color: $color-lightgreen;
+    background-color: $color-orange;
+    border: $color-orange;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Noto+Serif+TC:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&display=swap");
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.quote-section {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: white;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
+.quote-section.slide-up {
+  margin-top: 20vh;
+  transform: translateY(-20%);
+  transition: all 1s ease-in-out;
+}
+.quote-section hr {
+  border-bottom: 1px #ccc;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content {
+  font-family: "Kalam", cursive;
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+.quote-area {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.quote-area i {
+  padding-left: 6px;
+}
+.quote-area i:first-child {
+  transform: scale(-1, 1);
+}
+.quote-area i:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.features ul {
+  display: flex;
+  list-style: none;
+}
+.features ul li {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: #73a9c2;
+  border: 2px solid #73a9c2;
+  border-radius: 100%;
+  margin-right: 6px;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features ul li:hover, .features ul li:active {
+  color: #f1faee;
+  background-color: #e63946;
+  border: #e63946;
+}
+.features button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: #f1faee;
+  background-color: #73a9c2;
+}
+.features button:hover, .features button:active {
+  color: #f1faee;
+  background-color: #e63946;
+  border: #e63946;
+}
+
+button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.todo-section {
+  font-family: "Source Sans Pro", "Noto Serif TC";
+  background-color: white;
+  border-radius: 4px;
+  padding-top: 24px;
+  margin-top: -36px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.todo-section.slide-in {
+  display: block;
+  opacity: 1;
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.todo-input {
+  height: 48px;
+  padding: 0 24px;
+}
+.todo-input input {
+  height: 100%;
+  width: 100%;
+  padding-left: 6px;
+  font-size: 20px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+}
+.todo-input input:focus {
+  outline: none;
+  border: 2px solid #457b9d;
+  box-shadow: 0 0 3px #457b9d;
+}
+.todo-input input::placeholder {
+  color: #ccc;
+}
+
+.controls,
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ccc;
+}
+.controls span {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 16px;
+}
+.controls span:last-child {
+  margin-right: 0;
+}
+.controls span.active {
+  color: #e63946;
+}
+.controls button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 12px;
+  color: #f1faee;
+  background-color: #73a9c2;
+}
+.controls button:hover, .controls button:active {
+  color: #f1faee;
+  background-color: #e63946;
+  border: #e63946;
+}
+
+.todo-cardbox {
+  padding: 16px 18px;
+  background-color: #f5f5f5;
+}
+.todo-cardbox span {
+  font-size: 20px;
+  padding-left: 6px;
+}
+
+.todo {
+  list-style: none;
+  font-size: 20px;
+  padding: 12px 6px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+.todo:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.todo label {
+  display: flex;
+  align-items: center;
+}
+.todo label input {
+  width: 16px;
+  height: 16px;
+  accent-color: #e63946;
+}
+.todo label p {
+  user-select: none;
+  margin-left: 12px;
+  word-wrap: break-word;
+}
+.todo label p.checked {
+  text-decoration: line-through;
+  color: #e63946;
+}
+
+.settings {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.settings ul {
+  position: absolute;
+  background-color: white;
+  padding: 6px 0;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  right: 6px;
+  bottom: -62px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.2s ease;
+}
+.settings ul.show {
+  transform: scale(1);
+}
+.settings ul li {
+  font-size: 16px;
+  padding: 4px 12px;
+  justify-content: flex-start;
+}
+.settings ul li:hover {
+  background-color: #ccc;
+}
+.settings ul li i {
+  color: #73a9c2;
+}
+.settings i {
+  padding-right: 6px;
+}
+
+/*font-family
+'Kalam', cursive; Regular 400// quote form
+'Noto Serif TC', serif; R-400 M-500 B-700
+'Source Sans Pro', sans-serif; R-400 SemiBold-600
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 48;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../anete-lusina-unsplash.jpg");
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container {
+  line-height: 1;
+  max-width: 500px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.animate-btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f1faee;
+  background-color: #457b9d;
+  display: flex;
+  align-items: center;
+}
+.animate-btn:hover, .animate-btn:active {
+  color: #f1faee;
+  background-color: #e63946;
+  border: #e63946;
+}
+.animate-btn i {
+  padding-right: 6px;
+}/*# sourceMappingURL=main.css.map */
