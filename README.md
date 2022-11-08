@@ -1,6 +1,6 @@
 # Quote Generator + Todo List
 
-> [website] display on Netify
+> [website](https://qoute-todolist.netlify.app/) display on Netify
 
 ## 關鍵要點
 
