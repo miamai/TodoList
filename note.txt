@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=I0v9ZOY3_0k
+
+
+
+Facebook Sharer Api:- "https://www.facebook.com/sharer/sharer.php?u=";
+
+function shareOnFacebook(){
+const navUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + 'https://github.com/knoldus/angular-facebook-twitter.git';
+window.open(navUrl , '\_blank');
+}
+
+todolist https://www.youtube.com/watch?v=2QIMUBilooc
+
+////////code 更改//////
+if 那邊先改 toggle(不行 checked 不會自己消失)，也可以換成 parent element??(靜觀)
+原來 if add/ else {
+todoName.classList.remove("checked");
+}
+
+不懂為何設 let isEdited = false;
