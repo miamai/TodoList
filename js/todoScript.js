@@ -89,6 +89,7 @@ clearAll.addEventListener("click", () => {
 todoInput.addEventListener("keyup", (e) => {
   let userTodo = todoInput.value.trim(); //prevent user input empty value
   if (e.key == "Enter" && userTodo) {
+    
     if (!isEdited) {
       if (!tasks) {
         //if task isn't existed, pass an empty array to tasks
