@@ -43,8 +43,8 @@ fetch("http://api.quotable.io/random")
 
 ### 解惑
 
-> `res.jason()` `JSON.parse()`差別?
-> `res.jason()` is asynchronous and returns a Promise object that resolves to a JavaScript object. `JSON.parse()` is synchronous can parse a string to a JavaScript object.
+> `res.json()` `JSON.parse()`差別?
+> `res.json()` is asynchronous and returns a Promise object that resolves to a JavaScript object. `JSON.parse()` is synchronous can parse a string to a JavaScript object.
 
 ### Todo List 如何搭配本地儲存?
 
